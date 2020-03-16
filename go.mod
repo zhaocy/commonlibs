@@ -12,7 +12,7 @@ require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/golang/protobuf v1.3.5
 	github.com/matchvs/gameServer-go v0.0.0-20181227064531-5aa0044da074
-	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7 // indirect
-	golang.org/x/net v0.0.0-20190311183353-d8887717615a
-	google.golang.org/grpc v1.19.0
+	github.com/zhaocy/gameServer-go v0.0.1
+	golang.org/x/net v0.0.0-20200301022130-244492dfa37a
+	google.golang.org/grpc v1.28.0
 )

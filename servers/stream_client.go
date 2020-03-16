@@ -20,7 +20,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/matchvs/gameServer-go/src/log"
+	"github.com/zhaocy/gameServer-go/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )
