@@ -4,7 +4,7 @@ import (
 	pb "github.com/zhaocy/commonlibs/proto"
 	"fmt"
 
-	"github.com/zhaocy/gameServer-go/log"
+	"github.com/zhaocy/commonlibs/log"
 	"golang.org/x/net/context"
 	"google.golang.org/grpc"
 )

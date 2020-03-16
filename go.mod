@@ -9,9 +9,10 @@ replace (
 )
 
 require (
+	github.com/BurntSushi/toml v0.3.1
 	github.com/davecgh/go-spew v1.1.1
 	github.com/golang/protobuf v1.3.5
-	github.com/zhaocy/gameServer-go v0.0.6
+	github.com/op/go-logging v0.0.0-20160315200505-970db520ece7
 	golang.org/x/net v0.0.0-20200301022130-244492dfa37a
 	google.golang.org/grpc v1.28.0
 )

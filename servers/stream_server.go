@@ -19,7 +19,7 @@ import (
 	"sync/atomic"
 	"time"
 
-	"github.com/zhaocy/gameServer-go/log"
+	"github.com/zhaocy/commonlibs/log"
 	"google.golang.org/grpc"
 	"google.golang.org/grpc/metadata"
 )

@@ -9,8 +9,8 @@ import (
 	"strconv"
 
 	"github.com/golang/protobuf/proto"
-	"github.com/zhaocy/gameServer-go/config"
-	"github.com/zhaocy/gameServer-go/log"
+	"github.com/zhaocy/commonlibs/config"
+	"github.com/zhaocy/commonlibs/log"
 )
 
 type RoomManager struct {

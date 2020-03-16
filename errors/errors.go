@@ -4,7 +4,7 @@ import (
 	"runtime"
 
 	"github.com/davecgh/go-spew/spew"
-	"github.com/zhaocy/gameServer-go/log"
+	"github.com/zhaocy/commonlibs/log"
 )
 
 // 产生panic时的调用栈打印
