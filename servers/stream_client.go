@@ -10,7 +10,7 @@
 package servers
 
 import (
-	pb "commonlibs/proto"
+	pb "github.com/zhaocy/commonlibs/proto"
 	"context"
 	"errors"
 	"fmt"

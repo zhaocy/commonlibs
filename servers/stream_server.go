@@ -10,8 +10,8 @@
 package servers
 
 import (
-	"commonlibs/errors"
-	pb "commonlibs/proto"
+	"github.com/zhaocy/commonlibs/errors"
+	pb "github.com/zhaocy/commonlibs/proto"
 	"io"
 	"net"
 	"strconv"

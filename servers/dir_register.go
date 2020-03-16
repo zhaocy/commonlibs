@@ -1,7 +1,7 @@
 package servers
 
 import (
-	pb "commonlibs/proto"
+	pb "github.com/zhaocy/commonlibs/proto"
 	"fmt"
 	"hash/crc32"
 	"time"
