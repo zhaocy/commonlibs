@@ -11,8 +11,7 @@ replace (
 require (
 	github.com/davecgh/go-spew v1.1.1
 	github.com/golang/protobuf v1.3.5
-	github.com/matchvs/gameServer-go v0.0.0-20181227064531-5aa0044da074
-	github.com/zhaocy/gameServer-go v0.0.1
+	github.com/zhaocy/gameServer-go v0.0.5
 	golang.org/x/net v0.0.0-20200301022130-244492dfa37a
 	google.golang.org/grpc v1.28.0
 )
