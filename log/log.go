@@ -20,6 +20,12 @@ const (
 	debug
 )
 
+const (
+	FILE = "file"
+	STD  = "std"
+	ALL  = "all"
+)
+
 var (
 	// 日志管理器
 	mlog *logger
@@ -51,6 +57,7 @@ type logger struct {
 	filePath string
 	ModeName string
 	format   int
+	outMode  string
 }
 
 func init() {
@@ -77,11 +84,22 @@ func newLog(level string) *logger {
 	return log
 }
 
+func (l *logger) SetOutMode(outMode string) {
+	l.outMode = outMode
+	return
+}
+
 func (l *logger) AddLogBackend() {
 	l.log.ExtraCalldepth = 2
-	// backend1 := l.getFileBackend()
-	backend2 := l.getStdOutBackend()
-	logging.SetBackend(backend2)
+	var backend logging.LeveledBackend
+	if l.outMode == FILE{
+		backend = l.getFileBackend()
+	}else if l.outMode == STD{
+		backend = l.getStdOutBackend()
+	}else{
+		backend = l.getStdOutBackend()
+	}
+	logging.SetBackend(backend)
 	return
 }
 
@@ -101,7 +119,6 @@ func (l *logger) getFileBackend() logging.LeveledBackend {
 		panic(err)
 	}
 	backend := l.getLogBackend(file, logLevelMap[l.level])
-	logging.SetBackend(backend)
 	return backend
 }
 
