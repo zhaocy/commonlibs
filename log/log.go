@@ -23,7 +23,6 @@ const (
 const (
 	FILE = "file"
 	STD  = "std"
-	ALL  = "all"
 )
 
 var (
@@ -61,15 +60,16 @@ type logger struct {
 }
 
 func init() {
-	Init("DEBUG")
+	Init("DEBUG",STD)
 }
 
 /**
  * 初始化日志
  * @param logLevel The arguments could be INFO, DEGUE, ERROR
  */
-func Init(logLevel string) {
+func Init(logLevel,outMode string) {
 	mlog = newLog(logLevel)
+	mlog.outMode = outMode
 	return
 }
 
@@ -82,11 +82,6 @@ func newLog(level string) *logger {
 	log.log = logging.MustGetLogger(log.ModeName)
 	log.AddLogBackend()
 	return log
-}
-
-func (l *logger) SetOutMode(outMode string) {
-	l.outMode = outMode
-	return
 }
 
 func (l *logger) AddLogBackend() {
